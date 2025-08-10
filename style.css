@@ -1,0 +1,224 @@
+:root {
+  --primary: #9538ce;
+  --primary-dark: #fbf6fd;
+  --text: #eee0e0;
+  --gray: #e7dada;
+  --white: #dfd4d4;
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --shadow-dark: rgba(0, 0, 0, 0.25);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: transparent;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Transparent header */
+.header {
+  background-color: rgba(120, 15, 195, 0.1);
+  color: var(--white);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-dark);
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Shared Glass Effect Box */
+.glass-box {
+  background-color: rgba(255, 255, 255, 0.8); /* 90-95% transparency */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow-light);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 20px;
+}
+
+/* Section styling */
+.section {
+  margin: 30px 0;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  transition: 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+.skills-grid span {
+  background: rgba(149, 56, 206, 0.2); /* 90% transparent */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+
+/* Projects */
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card img {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(24, 20, 20, 0.3);
+}
+
+.project-card h3 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #f5f3f3;
+}
+
+.project-card a {
+  font-weight: 500;
+  margin-right: 15px;
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--primary-dark);
+}
+.certificates-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.certificate-card {
+  width: 32%;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  color: #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  opacity: 0.95;
+}
+
+.certificate-card:hover {
+  transform: scale(1.03);
+}
+
+.certificate-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+
+/* Resume and Contact side-by-side */
+.flex-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.resume-box,
+.contact-card {
+    
+  flex: 1 1 45%;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: rgba(95, 18, 143, 0.2); 
+  color: rgb(0, 84, 252);
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.95rem;
+  color: #efeff4;
+  margin-top: 40px;
+}
+
+/* Image hover zoom for all */
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}

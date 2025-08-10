@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijay Kumar Shah | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #vanta-bg {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        nav.navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 999;
+            backdrop-filter: blur(8px);
+        }
+
+        nav.navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav.navbar a:hover {
+            color: #a24dff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Vanta Background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Vijay Kumar Shah</h1>
+            <p class="tagline">Full Stack Developer | JavaScript | React | Node.js</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <img src="images/vijay profile.png" alt="Your Photo" class="profile-img" />
+                <div>
+                    <h2>About Me</h2>
+                    <p>
+                        I'm a full-stack web developer with a strong focus on building scalable, user-friendly
+                        applications. I specialize in React and Node.js, and have hands-on experience across the full
+                        development stack from UI design to backend APIs.
+
+                        I'm comfortable working with tools like MongoDB, Express, Git, and modern frameworks, and I
+                        constantly refine my skills to stay current with evolving technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript (ES6+)</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>MongoDB</span>
+                    <span>PostgreSQL</span>
+                    <span>Git & GitHub</span>
+                    <span>REST APIs</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+
+                <div class="project-card">
+                    <img src="images/expense tracker.jpeg" alt="Expense Tracker System" />
+                    <div>
+                        <h3>Expense Tracker System</h3>
+                        <p>
+                            A full-featured expense tracking web app where users can manage their income and expenses.
+                            Built with JavaScript and local storage for persistence. Supports CRUD operations,
+                            filtering, and monthly summary.
+                        </p>
+                        <a href="https://github.com/Vijayshah099/Expense-tracker-system" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/food delivery.jpg" alt="Online Food Delivery" />
+                    <div>
+                        <h3>Online Food Delivery Website</h3>
+                        <p>
+                            A static website developed using HTML, CSS, and JavaScript for a fictional online food
+                            delivery service. Includes responsive layout, animated navigation, and product showcase.
+                        </p>
+                        <a href="https://github.com/Vijayshah099/online-food-delivery" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/aqi prediction model.png" alt="AQI Prediction Model" />
+                    <div>
+                        <h3>AQI Prediction Model</h3>
+                        <p>
+                            A machine learning model that predicts Air Quality Index (AQI) based on environmental
+                            parameters. Trained using scikit-learn and deployed using Flask. Outputs pollution category
+                            and recommendations.
+                        </p>
+                        <a href="https://github.com/Vijayshah099/AQI-prediction-model" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="certificates" class="section">
+            <div class="container">
+                <h2>Certificates</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <img src="images/accenture.png" alt="Accenture Job Simulation Certificate" />
+                        <p>
+                            Completed the **Accenture Software Engineering Job Simulation** via Forage. Covered
+                            real-world tasks in architecture, security, programming, testing, and agile methodology.
+                        </p>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="images/frontend.png" alt="Certificate 2" />
+                        <p>
+                            Completed Simplilearn’s Front-End Development program, gaining practical skills in HTML,
+                            CSS, JavaScript, and React. Built responsive web interfaces and dynamic user experiences
+                            through hands-on projects.
+                        </p>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="images/AI.png" alt="Certificate 3" />
+                        <p>
+                            Completed HP’s “AI for Beginners” program covering foundational concepts in Artificial
+                            Intelligence, machine learning, and real-world applications. Gained basic hands-on
+                            understanding of AI tools and ethical implications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Resume & Contact</h2>
+                <div class="flex-boxes">
+                    <div class="resume-box">
+                        <h3>Resume</h3>
+                        <a class="btn" href="Vijay_Kumar_Shah_Resume.pdf" download>📄 Download Resume</a>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Contact</h3>
+                        <p>Email: <a href="mailto:shahvij1020@gmail.com">shahvij1020@gmail.com</a></p>
+                        <p>Phone: +91-8957006602</p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/vijay-kumar-shah01/"
+                                target="_blank">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Vijay Kumar Shah. Built with love using HTML, CSS & JS.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x6a0dad,
+            backgroundColor: 0x0e001a
+        });
+    </script>
+</body>
+
+</html>
