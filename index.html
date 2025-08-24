@@ -44,6 +44,11 @@
             color: #a24dff;
         }
     </style>
+    <meta name="title" content="Vijay Kumar Shah Portfolio">
+<meta name="description" content="Official portfolio of Vijay Kumar Shah - Web Developer, Designer, and Programmer. Showcasing projects, skills, and experience.">
+<meta name="keywords" content="Vijay Kumar Shah, Portfolio, Web Developer, Projects, Skills">
+<meta name="author" content="Vijay Kumar Shah">
+
 </head>
 
 <body>
@@ -62,7 +67,11 @@
     <header class="header">
         <div class="container">
             <h1 class="logo">Vijay Kumar Shah</h1>
-            <p class="tagline">Full Stack Developer | JavaScript | React | Node.js</p>
+           <p class="tagline">
+  <span id="typed"></span>
+</p>
+
+
         </div>
     </header>
 
@@ -204,22 +213,39 @@
         <p>© 2025 Vijay Kumar Shah. Built with love using HTML, CSS & JS.</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
-    <script>
-        VANTA.NET({
-            el: "#vanta-bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: 0x6a0dad,
-            backgroundColor: 0x0e001a
-        });
-    </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  VANTA.NET({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x6a0dad,
+    backgroundColor: 0x0e001a
+  });
+
+  var typed = new Typed("#typed", {
+    strings: [
+      "Full Stack Developer",
+      "JavaScript | React | Node.js",
+      "MERN Stack Developer",
+      "Open Source Enthusiast"
+    ],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true,
+    showCursor: true,
+    cursorChar: "|"
+  });
+</script>
+
 </body>
 
 </html>
